@@ -57,6 +57,7 @@ nav .right a:last-child {
 
 nav .right a span {
   margin-left: 5px;
+  margin-right: 12px;
 }
 
 /* SECTION 1: Hero */
@@ -130,6 +131,7 @@ nav .right a span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 12px;
 }
 
 .skills-section .cells .cell {
