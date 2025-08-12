@@ -43,7 +43,7 @@ const Testimony = () => {
               >
                 <div className="w-48 h-48 mx-auto lg:mx-0 rounded-full overflow-hidden shadow-lg mb-6">
                   <img
-                    src="/src/assets/images/Di-Liu.webp"
+                    src="/images/Di-Liu.webp"
                     alt="Di Liu"
                     className="w-full h-full object-cover"
                   />

@@ -104,7 +104,7 @@ const About = () => {
               whileTap={{ scale: 0.95 }}
               className="mt-8 inline-block bg-primary-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors"
             >
-                             Resume
+                             Résumé
             </motion.a>
           </motion.div>
         </div>

@@ -92,12 +92,6 @@ const Contact = () => {
       title: 'Location',
       value: 'San Jose, California',
       href: 'https://maps.google.com/?q=San+Jose,+California'
-    },
-    {
-      icon: Phone,
-      title: 'Phone',
-      value: '669-350-8530',
-      href: 'tel:+16693508530'
     }
   ]
 

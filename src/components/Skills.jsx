@@ -9,87 +9,87 @@ const Skills = () => {
   const skills = [
     {
       name: 'Java',
-      icon: '/src/assets/images/java-logo.png',
+      icon: '/images/java-logo.png',
       category: 'Programming'
     },
     {
       name: 'C++',
-      icon: '/src/assets/images/cpp-logo.png',
+      icon: '/images/cpp-logo.png',
       category: 'Programming'
     },
     {
       name: 'Python',
-      icon: '/src/assets/images/python-logo.png',
+      icon: '/images/python-logo.png',
       category: 'Programming'
     },
     {
       name: 'JavaScript',
-      icon: '/src/assets/images/javascript-logo.webp',
+      icon: '/images/javascript-logo.webp',
       category: 'Web Development'
     },
     {
       name: 'TypeScript',
-      icon: '/src/assets/images/typescript.png',
+      icon: '/images/typescript.png',
       category: 'Web Development'
     },
     {
       name: 'HTML/CSS',
-      icon: '/src/assets/images/html-logo.webp',
+      icon: '/images/html-logo.webp',
       category: 'Web Development'
     },
     {
       name: 'React',
-      icon: '/src/assets/images/react-logo.webp',
+      icon: '/images/react-logo.webp',
       category: 'Frameworks'
     },
     {
       name: 'Node.js',
-      icon: '/src/assets/images/node-logo.webp',
+      icon: '/images/node-logo.webp',
       category: 'Frameworks'
     },
     {
       name: 'Express',
-      icon: '/src/assets/images/express-logo.png',
+      icon: '/images/express-logo.png',
       category: 'Frameworks'
     },
     {
       name: 'Next.js',
-      icon: '/src/assets/images/nextjs-logo.png',
+      icon: '/images/nextjs-logo.png',
       category: 'Frameworks'
     },
     {
       name: 'Flask',
-      icon: '/src/assets/images/flask-logo.png',
+      icon: '/images/flask-logo.png',
       category: 'Frameworks'
     },
     {
       name: 'Tailwind CSS',
-      icon: '/src/assets/images/tailwind-logo.png',
+      icon: '/images/tailwind-logo.png',
       category: 'Styling'
     },
     {
       name: 'Git',
-      icon: '/src/assets/images/git-logo.png',
+      icon: '/images/git-logo.png',
       category: 'Tools'
     },
     {
       name: 'GitHub',
-      icon: '/src/assets/images/github-logo.png',
+      icon: '/images/github-logo.png',
       category: 'Tools'
     },
     {
       name: 'Postman',
-      icon: '/src/assets/images/postman-logo.png',
+      icon: '/images/postman-logo.png',
       category: 'Tools'
     },
     {
       name: 'MongoDB',
-      icon: '/src/assets/images/mongodb-logo.png',
+      icon: '/images/mongodb-logo.png',
       category: 'Databases'
     },
     {
       name: 'SQL',
-      icon: '/src/assets/images/sql-logo.png',
+      icon: '/images/sql-logo.png',
       category: 'Databases'
     }
   ]
