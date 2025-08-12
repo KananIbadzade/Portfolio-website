@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    height: 100%;
+    /* A very light, soft off-white for the light mode base */
+    background-color: #f8f9fa; 
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  html.dark {
+    background-color: #111827; /* Tailwind gray-900 */
+  }
+   
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    min-height: 100%;
+    background-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+  }
+  
+  section {
+    overscroll-behavior: contain;
+  }
+  
+  /* Modern scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(156, 163, 175, 0.5);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(156, 163, 175, 0.8);
+  }
+  
+  /* Dark mode scrollbar */
+  .dark ::-webkit-scrollbar-thumb {
+    background: rgba(75, 85, 99, 0.5);
+  }
+  
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: rgba(75, 85, 99, 0.8);
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-lg font-medium hover:bg-primary-600 hover:text-white transition-colors duration-200;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all duration-200;
+  }
+}
+
+/* --- STARFIELD & PARTICLES (SHARED CONTAINER) --- */
+.stars-container, .day-particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1; /* Place behind all content */
+  overflow: hidden;
+}
+
+/* --- Dark Mode: Stars & Meteors --- */
+/* Twinkling star style */
+.star {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  animation: twinkle var(--twinkle-duration, 4s) infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Shooting star (meteor) style */
+.shooting-star {
+  position: absolute;
+  height: 2px;
+  width: var(--meteor-length, 150px);
+  /* The gradient now creates a trail straight behind the head */
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px #ffffff);
+  animation: meteor-fall var(--meteor-duration, 2s) linear forwards;
+  /* This ensures the rotation happens from the "head" of the meteor */
+  transform-origin: left center;
+}
+
+/* 
+  Meteor animation:
+  - Rotates the entire element to the desired angle.
+  - Translates it along its new X-axis, making it fly in the direction it's pointing.
+*/
+@keyframes meteor-fall {
+  0% {
+    transform: rotate(var(--meteor-angle, 45deg)) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(var(--meteor-angle, 45deg)) translateX(var(--meteor-distance, 1500px));
+    opacity: 0;
+  }
+}
+
+/* --- Light Mode: Drifting Pastel Particles --- */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0; /* Start invisible and fade in */
+  /* Using a single, continuous animation for drifting */
+  animation: drift linear infinite;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(var(--x-start), var(--y-start));
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.5; /* Fade in to a subtle opacity */
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(var(--x-end), var(--y-end));
+    opacity: 0; /* Fade out at the end of the journey */
+  }
+}
+
+/* --- END OF STARFIELD BACKGROUND --- */
