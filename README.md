@@ -51,7 +51,7 @@ feel free to choose your personal preference, options:
 
 ## 📱 Live Demo
 
-[Portfolio Link](https://your-portfolio-url.vercel.app)
+[Portfolio Link](https://kananibadzade.vercel.app/)
 
 ---
 
