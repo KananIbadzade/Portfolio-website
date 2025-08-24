@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 import { Github, ExternalLink, Code, Globe } from 'lucide-react'
 
 const Projects = () => {
+  const [showAll, setShowAll] = useState(false)
   const projects = [
     {
       id: 1,
@@ -66,7 +68,7 @@ const Projects = () => {
 
         {/* Project Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {(showAll ? projects : projects.slice(0, 3)).map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 50 }}
@@ -150,7 +152,7 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* View More Projects Button */}
+        {/* See More / See Less Button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -158,17 +160,27 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <motion.a
-            href="https://github.com/KananIbadzade"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center space-x-2 bg-primary-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors"
-          >
-            <Github className="w-5 h-5" />
-            <span>View More on GitHub</span>
-          </motion.a>
+          {!showAll ? (
+            <motion.button
+              type="button"
+              onClick={() => setShowAll(true)}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center space-x-2 bg-primary-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors"
+            >
+              <span>See More</span>
+            </motion.button>
+          ) : (
+            <motion.button
+              type="button"
+              onClick={() => setShowAll(false)}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center space-x-2 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-100 px-8 py-3 rounded-lg font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+            >
+              <span>See Less</span>
+            </motion.button>
+          )}
         </motion.div>
       </div>
     </section>
