@@ -1,7 +1,32 @@
 import { motion } from 'framer-motion'
-import { Code, PenTool, Mail, ArrowDown } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { Code, FileText, Mail, ArrowDown } from 'lucide-react'
 
 const Hero = () => {
+  const [typedText, setTypedText] = useState('')
+  const [hasTyped, setHasTyped] = useState(false)
+  const fullText = "Hi, I'm Kanan"
+
+  useEffect(() => {
+    if (hasTyped) return
+    let index = 0
+    let timeoutId
+    const typeNext = () => {
+      setTypedText(fullText.slice(0, index + 1))
+      index += 1
+      if (index >= fullText.length) {
+        setHasTyped(true)
+        return
+      }
+      const prevChar = fullText[index - 1]
+      let delay = 75 + Math.random() * 35 // slightly faster with natural jitter
+      if (prevChar === ',' || prevChar === ' ') delay += 80
+      if (prevChar === "'") delay += 25
+      timeoutId = setTimeout(typeNext, delay)
+    }
+    timeoutId = setTimeout(typeNext, 160)
+    return () => clearTimeout(timeoutId)
+  }, [hasTyped])
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
     if (element) {
@@ -26,11 +51,26 @@ const Hero = () => {
               transition={{ delay: 0.2, duration: 0.8 }}
             >
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-                Hi, I'm Kanan{' '}
-                <span className="text-4xl lg:text-5xl">👋</span>
+                {typedText || fullText}
+                <motion.span
+                  aria-hidden="true"
+                  animate={{ opacity: [1, 0.2, 1] }}
+                  transition={{ duration: 1.2, repeat: Infinity }}
+                  className="inline-block w-0.5 h-8 align-middle bg-gray-900 dark:bg-white ml-1"
+                />{' '}
+                {hasTyped && (
+                  <motion.span
+                    initial={{ opacity: 0, y: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{ duration: 0.35 }}
+                    className="text-4xl lg:text-5xl inline-block"
+                  >
+                    👋
+                  </motion.span>
+                )}
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                I'm a 20-year-old Software Engineering student at San José State University, originally from Baku, Azerbaijan. I moved to the Bay Area alone at 17 after finishing high school early to chase my passion for tech.
+                My journey began when I moved to the Bay Area at 17, right after finishing high school early. the Living alone forced me to mature quickly, and being close to the top tech center in the world only inspired my enthusiasm for creating, learning, and using software to solve issues.
               </p>
             </motion.div>
 
@@ -51,25 +91,29 @@ const Hero = () => {
                 About Me
               </motion.button>
               
-              <motion.button
+              <motion.a
+                href="https://drive.google.com/file/d/1E8WV7lIt-hZdDdD0h0DZEnntYll8A2JR/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => scrollToSection('projects')}
                 className="btn-secondary flex items-center gap-2"
               >
-                <PenTool size={20} />
-                Projects
-              </motion.button>
+                <FileText size={20} />
+                Resume
+              </motion.a>
               
-              <motion.button
+              <motion.a
+                href="mailto:kananibadzade@gmail.com"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => scrollToSection('contact')}
                 className="btn-secondary flex items-center gap-2"
               >
                 <Mail size={20} />
                 Contact
-              </motion.button>
+              </motion.a>
+              
+              
             </motion.div>
           </motion.div>
 

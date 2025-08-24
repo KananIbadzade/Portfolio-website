@@ -20,10 +20,9 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
+    { name: 'Education', href: '#education' },
     { name: 'Experience', href: '#experience' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
-    { name: 'Résumé', href: '/resume.pdf' }
+    { name: 'Projects', href: '#projects' }
   ]
 
   return (
@@ -83,13 +82,7 @@ const Navbar = () => {
             >
               <Linkedin size={20} />
             </motion.a>
-            <motion.a
-              href="mailto:kananibadzade@gmail.com"
-              whileHover={{ scale: 1.1 }}
-              className="text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors"
-            >
-              <Mail size={20} />
-            </motion.a>
+            
 
             {/* Theme Toggle */}
             <motion.button
@@ -163,12 +156,7 @@ const Navbar = () => {
               >
                 <Linkedin size={20} />
               </a>
-              <a
-                href="mailto:kananibadzade@gmail.com"
-                className="text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors"
-              >
-                <Mail size={20} />
-              </a>
+              
             </div>
           </div>
         </motion.div>

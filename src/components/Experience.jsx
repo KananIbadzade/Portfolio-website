@@ -4,6 +4,30 @@ import { Calendar, MapPin, Building } from 'lucide-react'
 const Experience = () => {
   const experiences = [
     {
+      id: 0,
+      title: 'Machine Learning Intern',
+      company: 'Solakair',
+      location: 'Remote',
+      period: 'August 2025 – Present',
+      description: 'Building and prototyping drone detection models (PicoDet, YOLO, TensorFlow, PyTorch) and benchmarking them on real-world video. Evaluating CPU vs GPU tradeoffs via CUDA C++ and Python to inform deployment.',
+      technologies: ['YOLO', 'TensorFlow', 'PyTorch', 'CUDA', 'C++', 'Python', 'Computer Vision', 'Object Detection'],
+      type: 'Part-time',
+      logoImg: '/images/solakair.png',
+      logo: '🧠'
+    },
+    {
+      id: 0.5,
+      title: 'Web Developer',
+      company: 'Machine Learning Club at SJSU',
+      location: 'San José, CA',
+      period: 'August 2025 – Present',
+      description: 'Building and maintaining club web tooling using Flask on Oracle Cloud with Oracle Database. Implementing REST APIs, authentication, and deployments to support events, projects, and internal operations.',
+      technologies: ['Flask', 'Oracle Cloud', 'Oracle DB', 'Python', 'React', 'REST'],
+      type: 'Part-time',
+      logoImg: 'https://media.licdn.com/dms/image/v2/C560BAQGRZzF33Ji0dg/company-logo_200_200/company-logo_200_200/0/1630667094779/sjsumlclub_logo?e=1758758400&v=beta&t=1FaNzjJvq0QTOJCo2FRZis-2bIiWCEB14HVGjG8b0mc',
+      logo: '🌐'
+    },
+    {
       id: 1,
       title: 'Test Engineer Intern',
       company: 'UL Solutions',
@@ -11,7 +35,8 @@ const Experience = () => {
       period: 'May 2025 – August 2025',
       description: 'Improved wireless device test efficiency using Python scripts for RF setups across Wi-Fi, Bluetooth, and 5G technologies. Analyzed RF performance data and contributed to semi-automated testing workflows.',
       technologies: ['Python', 'RF Testing', 'Wi-Fi', 'Bluetooth', '5G', 'Excel', 'Websockets'],
-      type: 'Internship',
+      type: 'Full-time',
+      logoImg: '/images/ul.png',
       logo: '🔬'
     },
     {
@@ -23,6 +48,7 @@ const Experience = () => {
       description: 'Instructed 50+ students in C++ programming, leading labs and developing hands-on coding challenges. Provided one-on-one mentoring and debugging sessions to strengthen technical communication skills.',
       technologies: ['C++', 'Data Structures', 'Algorithms', 'Object-Oriented Programming', 'Teaching'],
       type: 'Part-time',
+      logoImg: '/images/deanza.png',
       logo: '🎓'
     },
     {
@@ -34,6 +60,7 @@ const Experience = () => {
       description: 'Maintained 20+ lab systems and resolved technical issues, reducing downtime by 35%. Provided responsive technical support for students and faculty during peak hours.',
       technologies: ['Hardware Support', 'Software Installation', 'System Maintenance', 'Technical Troubleshooting'],
       type: 'Part-time',
+      logoImg: '/images/deanza.png',
       logo: '💻'
     }
   ]
@@ -80,11 +107,13 @@ const Experience = () => {
                     {/* Header */}
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center space-x-3">
-                        {experience.logo && (
+                        {(experience.logoImg || experience.logo) && (
                           <div className="w-12 h-12 rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center overflow-hidden border border-gray-200 dark:border-gray-600">
-                            <span className="text-2xl">
-                              {experience.logo}
-                            </span>
+                            {experience.logoImg ? (
+                              <img src={experience.logoImg} alt={`${experience.company} logo`} className="w-full h-full object-contain" />
+                            ) : (
+                              <span className="text-2xl">{experience.logo}</span>
+                            )}
                           </div>
                         )}
                         <div>

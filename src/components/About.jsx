@@ -50,23 +50,19 @@ const About = () => {
             className="space-y-6"
           >
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              Hey, thanks for dropping in!
+              Thanks for dropping in!
             </h3>
             
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              I’m Kanan Ibadzade, a rising senior Computer Software Engineering student at San José State University. I’m fascinated by the way code turns imagination into something people can touch and use, so I spend most of my free time building things, from full-stack web apps to AI-powered backend services.
+              I’m a Software Engineering student at San José State University who loves turning imagination into real, usable tech. I spend most of my free time building, from full-stack web apps to AI-powered backend services, and lately I’ve been diving into machine learning to explore how intelligent systems can make software smarter.
             </p>
             
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Since I first cracked open a C++ textbook in high school, my toolkit (and curiosity) have grown fast. These days, I bounce between object-oriented, functional, and low-level work, and I’ve had the chance to apply what I learn in the real world, whether that’s testing wireless tech with Python and RF systems at UL Solutions, fixing hardware as a computer technician, or guiding new coders as a C++ teaching assistant.
+              Outside the terminal, you’ll probably find me on a soccer pitch, working out, experimenting in the kitchen, or trying a new sport just for the fun of it. I’m also a polyglot, fluent in four languages and currently learning Spanish, so feel free to say hola!
             </p>
             
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Outside the terminal, you’ll probably find me on a soccer pitch, experimenting in the kitchen, or trying out a new sport just for the fun of it. I’m a polyglot at heart, fluent in four languages and now picking up Spanish ahead of a trip to Mexico City, so feel free to say hola!
-            </p>
-            
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Always learning, always building, let’s create something amazing together.
+              Always learning, always building. Let’s create something amazing together.
             </p>
 
             {/* Personal Info Grid */}
@@ -91,21 +87,7 @@ const About = () => {
               ))}
             </div>
 
-            {/* Check out CV/Resume Button */}
-            <motion.a
-              href="https://drive.google.com/file/d/1E8WV7lIt-hZdDdD0h0DZEnntYll8A2JR/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.8 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="mt-8 inline-block bg-primary-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors"
-            >
-                             Résumé
-            </motion.a>
+            
           </motion.div>
         </div>
       </div>
