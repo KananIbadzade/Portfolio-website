@@ -34,7 +34,7 @@ const About = () => {
           >
             <div className="relative">
               <img
-                src="/images/pic_hackathon.jpg"
+                src="/images/mission-peaks.jpg"
                 alt="Kanan Ibadzade"
                 className="w-full h-96 object-cover rounded-lg shadow-xl object-center scale-110"
               />
@@ -54,15 +54,15 @@ const About = () => {
             </h3>
             
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              I’m a Software Engineering student at San José State University who loves turning imagination into real, usable tech. I spend most of my free time building, from full-stack web apps to AI-powered backend services, and lately I’ve been diving into machine learning to explore how intelligent systems can make software smarter.
+              I'm a Computer Software Engineering student at San José State University with a passion for backend systems, infrastructure, and AI/ML. I love turning ideas into real, usable tech, from full-stack web apps to machine learning models that make software smarter.
             </p>
             
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Outside the terminal, you’ll probably find me on a soccer pitch, working out, experimenting in the kitchen, or trying a new sport just for the fun of it. I’m also a polyglot, fluent in four languages and currently learning Spanish, so feel free to say hola!
+              I see myself diving deeper into machine learning, computer vision, and robotics, with the long-term dream of building a robot from scratch. It's the same spark I felt watching Max and his father bring Atom back to life in Real Steel or Tony Stark piecing together the Iron Man suit in his garage. Those stories showed me what's possible and with the pace of today's technology, maybe in the next decade we'll have humanoid friends by our side. That's the future I want to help build.
             </p>
             
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Always learning, always building. Let’s create something amazing together.
+              Outside the terminal and school, you'll probably catch me playing soccer, lifting at the gym, cooking something new, or out hiking. I'm also a polyglot, fluent in four languages and currently learning Spanish - so feel free to say hola!
             </p>
 
             {/* Personal Info Grid */}

@@ -70,7 +70,7 @@ const Hero = () => {
                 )}
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                My journey began when I moved to the Bay Area at 17, right after finishing high school early. the Living alone forced me to mature quickly, and being close to the top tech center in the world only inspired my enthusiasm for creating, learning, and using software to solve issues.
+                originally from 🇦🇿, graduated high school early and moved to the Bay Area at 17, where living on my own taught me how to be independent and resilient. Being surrounded by incredible people and the world's top tech hubs only fueled my passion for chasing big ideas, from intelligent software to robotics and the future of human-tech collaboration.
               </p>
             </motion.div>
 
@@ -130,9 +130,9 @@ const Hero = () => {
             >
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl">
                 <img
-                  src="/images/pic_twinpeaks.jpg"
+                  src="/images/sf-me.jpg"
                   alt="Kanan Ibadzade"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover scale-110 object-center"
                 />
               </div>
               {/* Decorative elements */}
