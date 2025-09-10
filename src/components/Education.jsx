@@ -53,7 +53,7 @@ const Education = () => {
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">B.S. in Software Engineering</p>
                 <div className="flex flex-wrap items-center gap-4 text-xs text-gray-600 dark:text-gray-300">
-                  <span className="inline-flex items-center gap-1"><Calendar size={14} className="text-primary-600" /> Expected December 2026</span>
+                  <span className="inline-flex items-center gap-1"><Calendar size={14} className="text-primary-600" /> Started August 2024</span>
                   <span className="inline-flex items-center gap-1"><MapPin size={14} className="text-primary-600" /> San José, CA</span>
                 </div>
               </div>
