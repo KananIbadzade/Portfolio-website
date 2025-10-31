@@ -4,9 +4,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Experience from './components/Experience'
-import Education from './components/Education'
 import Projects from './components/Projects'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Stars from './components/Stars'
 import DayParticles from './components/DayParticles'
@@ -19,7 +17,7 @@ function AppContent() {
     // Simulate loading time
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 1000)
+    }, 300)
 
     return () => clearTimeout(timer)
   }, [])
@@ -43,10 +41,8 @@ function AppContent() {
         <main>
           <Hero />
           <About />
-          <Education />
           <Experience />
           <Projects />
-          {/* <Contact /> */}
         </main>
         <Footer />
       </div>

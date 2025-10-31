@@ -6,8 +6,8 @@
   html {
     scroll-behavior: smooth;
     height: 100%;
-    /* A very light, soft off-white for the light mode base */
-    background-color: #f8f9fa; 
+    /* Soft, warm off-white for the light mode base */
+    background-color: #fafafa; 
     -webkit-overflow-scrolling: touch;
   }
   
@@ -61,7 +61,7 @@
   }
   
   .card {
-    @apply bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300;
+    @apply bg-gray-50 rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300;
   }
   
   .btn-primary {
