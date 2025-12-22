@@ -8,10 +8,10 @@ const Experience = () => {
       title: 'Machine Learning Intern',
       company: 'Solakair',
       companyUrl: 'https://www.linkedin.com/company/solakair/',
-      location: 'Fremont, CA',
-      period: 'Aug 2025 – Present',
-      description: 'Building and prototyping drone detection models (PicoDet, YOLO, TensorFlow, PyTorch) and benchmarking on real-world video. Evaluating CPU vs GPU tradeoffs via C++ and Python.',
-      topSkills: ['YOLO', 'TensorFlow', 'PyTorch', 'C++', 'Python'],
+      location: 'Remote',
+      period: 'Aug 2025 – Dec 2025',
+      description: 'Worked on real-time drone detection for counter-UAS systems, prototyping and optimizing computer vision models for embedded deployment. My work improved inference speed and informed hardware decisions through CPU vs GPU performance analysis.',
+      topSkills: ['YOLO', 'TensorFlow', 'PyTorch', 'Python', 'Computer Vision'],
       type: 'Part-time',
       logoImg: '/images/solakair.png',
       logo: '🧠'
@@ -26,7 +26,7 @@ const Experience = () => {
       description: 'Led website rebuild and shipped new features with cross-functional team, improving platform reliability by ~25% through Jira workflows and authentication.',
       topSkills: ['Next.js', 'React', 'TypeScript', 'Jira', 'Git'],
       type: 'Part-time',
-      logoImg: 'https://media.licdn.com/dms/image/v2/D560BAQFvcN3hTfb-Nw/company-logo_200_200/B56Zk0j4fEIAAI-/0/1757523446029/ai_machine_learning_club_sjsu_logo?e=1763596800&v=beta&t=2y9-MZnLMgh4p3ncojZLab4wlRQvwHonQacgzxRczgc',
+      logoImg: 'https://media.licdn.com/dms/image/v2/D560BAQFvcN3hTfb-Nw/company-logo_200_200/B56Zk0j4fEIAAI-/0/1757523446029/ai_machine_learning_club_sjsu_logo?e=1767830400&v=beta&t=9ePwlJqUENyYsRgNOdia018jY3JlVq2FR6DEGo4cDKs',
       logo: '🌐'
     },
     {
@@ -72,7 +72,7 @@ const Experience = () => {
 
   return (
     <section id="experience" className="py-16 lg:py-24 bg-gray-100/50 dark:bg-gray-900/30">
-      <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

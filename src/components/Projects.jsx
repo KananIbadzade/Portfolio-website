@@ -4,6 +4,15 @@ import { Github, ExternalLink } from 'lucide-react'
 const Projects = () => {
   const projects = [
     {
+      id: 8,
+      title: 'SpartanAdvisor (SJSU MyPlanner)',
+      description: 'AI-powered academic planning platform for SJSU students and advisors with transcript parsing, course roadmap generation, and an intelligent chatbot backed by real university data.',
+      topSkills: ['React', 'TypeScript', 'Supabase', 'PostgreSQL', 'OpenAI', 'Next.js'],
+      github: '',
+      live: '',
+      relatedTo: 'AI / Full-Stack'
+    },
+    {
       id: 6,
       title: 'Research Assistant',
       description: 'Chrome extension for researchers to summarize, paraphrase, cite, highlight, and take notes directly from web pages.',
@@ -110,32 +119,32 @@ const Projects = () => {
                     )}
                   </div>
                   <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 leading-relaxed">
-                    {project.description}
-                  </p>
+                  {project.description}
+                </p>
                   <div className="flex flex-wrap gap-2">
                     {project.topSkills.map((skill, skillIndex) => (
-                      <span
+                    <span
                         key={skillIndex}
                         className="px-2.5 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded-md font-medium"
-                      >
+                    >
                         {skill}
-                      </span>
-                    ))}
+                    </span>
+                  ))}
                   </div>
                 </div>
                 <div className="flex items-center gap-3 flex-shrink-0">
                   {project.github && (
-                    <motion.a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                  <motion.a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       className="p-2 text-gray-400 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                       aria-label="GitHub"
                     >
                       <Github size={18} />
-                    </motion.a>
+                  </motion.a>
                   )}
                   {project.live && (
                     <motion.a

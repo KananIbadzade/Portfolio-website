@@ -43,7 +43,7 @@ const About = () => {
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Interests</h3>
             </div>
             <div className="flex flex-wrap gap-3">
-              {['Machine Learning', 'Computer Vision', 'Embedded System', 'IoT', 'Infrastructure', 'Cloud', 'Robotics', 'Autonomous Vehicle', 'Soccer', 'Astronomy'].map((interest, index) => (
+              {['Machine Learning', 'Computer Vision', 'Embedded System', 'IoT', 'Infrastructure', 'Cloud', 'Robotics', 'Autonomous Vehicle', 'Soccer'].map((interest, index) => (
                 <span
                   key={index}
                   className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium"
@@ -73,7 +73,7 @@ const About = () => {
               View Projects →
             </motion.button>
           </div>
-        </motion.div>
+          </motion.div>
       </div>
     </section>
   )
