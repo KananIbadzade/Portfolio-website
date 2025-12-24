@@ -4,6 +4,19 @@ import { Calendar, MapPin, Building } from 'lucide-react'
 const Experience = () => {
   const experiences = [
     {
+      id: -1,
+      title: 'Software Engineer Intern',
+      company: 'Zoox',
+      companyUrl: 'https://zoox.com/',
+      location: 'Foster City, CA',
+      period: 'Jan 2026 – Present',
+      description: 'Spring term SWE intern in System Design and Mission Assurance team.',
+      topSkills: [],
+      type: 'Part-time',
+      logoImg: 'https://media.licdn.com/dms/image/v2/C560BAQF2yqp_9BrVew/company-logo_200_200/company-logo_200_200/0/1654722579133/zoox_inc_logo?e=1768435200&v=beta&t=qFrhxJuRvJMhmuLl665nGHFSb2sn4MmoNjYXHdELbzk',
+      logo: '🚗'
+    },
+    {
       id: 0,
       title: 'Machine Learning Intern',
       company: 'Solakair',
@@ -72,11 +85,12 @@ const Experience = () => {
 
   // Sort experiences by date (latest first) to ensure correct order
   const sortedExperiences = [
-    experiences[1], // Aug 2025 - Present (AI/ML Club) - Moved to top
-    experiences[0], // Aug 2025 - Dec 2025 (Solakair)
-    experiences[2], // May 2025
-    experiences[4], // Oct 2023
-    experiences[3]  // Mar 2023
+    experiences[0], // Jan 2026 - Present (Zoox)
+    experiences[2], // Aug 2025 - Present (AI/ML Club)
+    experiences[1], // Aug 2025 - Dec 2025 (Solakair)
+    experiences[3], // May 2025 (UL Solutions)
+    experiences[5], // Oct 2023 (Computer Technician)
+    experiences[4]  // Mar 2023 (Teaching Assistant)
   ];
 
   return (
@@ -128,8 +142,8 @@ const Experience = () => {
                   <div className="group relative bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-primary-500/50 dark:hover:border-primary-500/50 hover:shadow-xl hover:shadow-primary-500/10 transition-all duration-300">
                     {/* Arrow for Desktop */}
                     <div className={`hidden md:block absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-white dark:bg-gray-800 border-t border-l border-gray-200 dark:border-gray-700 transform rotate-45 transition-colors duration-300 group-hover:border-primary-500/50 ${index % 2 === 0
-                        ? '-right-1.5 border-r border-b border-t-0 border-l-0' // Arrow on right for left item
-                        : '-left-1.5' // Arrow on left for right item
+                      ? '-right-1.5 border-r border-b border-t-0 border-l-0' // Arrow on right for left item
+                      : '-left-1.5' // Arrow on left for right item
                       }`} />
 
                     <div className="flex items-start gap-4">
