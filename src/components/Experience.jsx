@@ -61,7 +61,7 @@ const Experience = () => {
       company: 'De Anza College',
       companyUrl: 'https://www.linkedin.com/school/de-anza-college/',
       location: 'Cupertino, CA',
-      period: 'Mar 2023 – Jul 2024',
+      period: 'Mar 2024 – Jul 2024',
       description: 'Instructed 50+ students in C++ programming, leading labs and developing hands-on coding challenges. Provided one-on-one mentoring and debugging sessions.',
       topSkills: ['C++', 'Data Structures', 'Algorithms', 'OOP'],
       type: 'Part-time',
