@@ -7,6 +7,7 @@ import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import Stars from './components/Stars'
+import Snow from './components/Snow'
 import DayParticles from './components/DayParticles'
 
 function AppContent() {
@@ -35,7 +36,9 @@ function AppContent() {
 
   return (
     <div className="min-h-screen bg-transparent transition-colors duration-300 relative overflow-hidden">
-      {isDark ? <Stars /> : <DayParticles />}
+      {/* Christmas Snow Effect - Original Stars effect commented out below */}
+      {/* {isDark ? <Stars /> : <DayParticles />} */}
+      {isDark ? <Snow /> : <DayParticles />}
       <div className="relative z-20">
         <Navbar />
         <main>

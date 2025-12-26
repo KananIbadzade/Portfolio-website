@@ -34,63 +34,63 @@ const Hero = () => {
           </motion.div>
 
           {/* Name and Intro */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
             className="space-y-4"
-            >
+          >
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white tracking-tight">
               Kanan Ibadzade
-              </h1>
+            </h1>
             <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 font-light">
               Computer Software Engineering @ San Jose State University
             </p>
             <p className="text-base text-gray-500 dark:text-gray-400 max-w-xl mx-auto leading-relaxed">
               Building impactful solutions and exploring the intersection of AI, ML, and modern software development.
-              </p>
-            </motion.div>
+            </p>
+          </motion.div>
 
           {/* Quick Links */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
             className="flex flex-wrap justify-center gap-3"
-            >
+          >
             <motion.a
               href="mailto:kananibadzade@gmail.com"
               whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
+              whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-all"
-              >
+            >
               <Mail size={16} />
               Contact
             </motion.a>
-              
-              <motion.a
+
+            <motion.a
               href="https://github.com/KananIbadzade"
-                target="_blank"
-                rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
+              whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700 rounded-lg text-sm font-medium hover:border-gray-300 dark:hover:border-gray-600 transition-all"
-              >
+            >
               <Github size={16} />
               GitHub
-              </motion.a>
-              
-              <motion.a
+            </motion.a>
+
+            <motion.a
               href="https://www.linkedin.com/in/kanan-ibadzade/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
+              whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700 rounded-lg text-sm font-medium hover:border-gray-300 dark:hover:border-gray-600 transition-all"
-              >
+            >
               <Linkedin size={16} />
               LinkedIn
-              </motion.a>
+            </motion.a>
           </motion.div>
 
           {/* Scroll Indicator */}

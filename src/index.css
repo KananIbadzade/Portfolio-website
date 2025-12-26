@@ -160,3 +160,33 @@
 }
 
 /* --- END OF STARFIELD BACKGROUND --- */
+/* --- Snow Effect (Christmas) --- */
+.snowflake {
+  position: absolute;
+  top: -10px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: drop-shadow(0 0 4px white);
+}
+
+@keyframes snow-fall {
+  0% {
+    top: -10px;
+    transform: translateX(0);
+  }
+  100% {
+    top: 110vh;
+    transform: translateX(var(--drift));
+  }
+}
+
+/* --- CSS Santa Hat Animation --- */
+@keyframes sway {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg); }
+}
+
+.animate-sway {
+  animation: sway 3s ease-in-out infinite;
+}
