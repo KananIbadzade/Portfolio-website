@@ -26,7 +26,7 @@ const Experience = () => {
       description: 'Worked on real-time drone detection for counter-UAS systems, prototyping and optimizing computer vision models for embedded deployment and performance tradeoffs.',
       topSkills: ['YOLO', 'TensorFlow', 'PyTorch', 'Python', 'Computer Vision'],
       type: 'Part-time',
-      logoImg: '/images/solakair.png',
+      logoImg: 'https://media.licdn.com/dms/image/v2/D560BAQFM3HGYEd54Qw/company-logo_200_200/B56ZU3AzYAHsAI-/0/1740384712418?e=1769040000&v=beta&t=ei1Er3sBLC_IuZDivofQXXiruwJ7aLgd9ewZb2-F9fo',
       logo: '🧠'
     },
     {
@@ -52,7 +52,7 @@ const Experience = () => {
       description: 'Automated RF test configurations in Python, supporting Wi-Fi, Bluetooth, and 5G certification workflows.',
       topSkills: ['Python', 'RF Testing', 'Wi-Fi', 'Bluetooth', '5G'],
       type: 'Full-time',
-      logoImg: '/images/ul.png',
+      logoImg: 'https://media.licdn.com/dms/image/v2/C560BAQF6aPtfKvMrgQ/company-logo_200_200/company-logo_200_200/0/1656335537218/ul__logo?e=1769040000&v=beta&t=WQuFPzz3TBwY3g-ZtaZox0SxhZJMWBcqc9MlBFcLTEE',
       logo: '🔬'
     },
     {
@@ -65,7 +65,7 @@ const Experience = () => {
       description: 'Supported C++ programming labs by helping students with data structures, algorithms, and debugging through hands-on mentoring.',
       topSkills: ['C++', 'Data Structures', 'Algorithms', 'OOP'],
       type: 'Part-time',
-      logoImg: '/images/deanza.png',
+      logoImg: 'https://media.licdn.com/dms/image/v2/C510BAQFOIoUaCdyM7Q/company-logo_200_200/company-logo_200_200/0/1631379563643?e=1769040000&v=beta&t=ewQQKecBW3nELnxkDAeQMIcBeonn3fryb_dEpS90cm4',
       logo: '🎓'
     },
     {
@@ -78,7 +78,7 @@ const Experience = () => {
       description: 'Maintained computer lab systems and provided hands-on hardware and software troubleshooting for students and faculty.',
       topSkills: ['Hardware Support', 'System Maintenance', 'Troubleshooting'],
       type: 'Part-time',
-      logoImg: '/images/deanza.png',
+      logoImg: 'https://media.licdn.com/dms/image/v2/C510BAQFOIoUaCdyM7Q/company-logo_200_200/company-logo_200_200/0/1631379563643?e=1769040000&v=beta&t=ewQQKecBW3nELnxkDAeQMIcBeonn3fryb_dEpS90cm4',
       logo: '💻'
     }
   ]
