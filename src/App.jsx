@@ -36,9 +36,9 @@ function AppContent() {
 
   return (
     <div className="min-h-screen bg-transparent transition-colors duration-300 relative overflow-hidden">
-      {/* Christmas Snow Effect - Original Stars effect commented out below */}
-      {/* {isDark ? <Stars /> : <DayParticles />} */}
-      {isDark ? <Snow /> : <DayParticles />}
+      {/* Original Stars effect with comets - Snow effect commented out below */}
+      {isDark ? <Stars /> : <DayParticles />}
+      {/* {isDark ? <Snow /> : <DayParticles />} */}
       <div className="relative z-20">
         <Navbar />
         <main>
