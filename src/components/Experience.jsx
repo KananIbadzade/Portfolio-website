@@ -5,12 +5,12 @@ const Experience = () => {
   const experiences = [
     {
       id: -1,
-      title: 'Software Engineer Intern',
+      title: 'Software Engineer (contract)',
       company: 'Zoox',
       companyUrl: 'https://zoox.com/',
       location: 'Foster City, CA',
       period: 'Jan 2026 – Present',
-      description: 'Spring term SWE intern in System Design and Mission Assurance team.',
+      description: 'Working on the System Design and Mission Assurance (SDMA) team for Spring 2026 term',
       topSkills: [],
       type: 'Part-time',
       logoImg: 'https://media.licdn.com/dms/image/v2/C560BAQF2yqp_9BrVew/company-logo_200_200/company-logo_200_200/0/1654722579133/zoox_inc_logo?e=1768435200&v=beta&t=qFrhxJuRvJMhmuLl665nGHFSb2sn4MmoNjYXHdELbzk',
@@ -88,9 +88,9 @@ const Experience = () => {
     experiences[0], // Jan 2026 - Present (Zoox)
     experiences[2], // Aug 2025 - Present (AI/ML Club)
     experiences[1], // Aug 2025 - Dec 2025 (Solakair)
-    experiences[3], // May 2025 (UL Solutions)
-    experiences[5], // Oct 2023 (Computer Technician)
-    experiences[4]  // Mar 2023 (Teaching Assistant)
+    experiences[3], // May 2025 - Aug 2025 (UL Solutions)
+    experiences[4], // Mar 2024 - Jul 2024 (Teaching Assistant)
+    experiences[5]  // Oct 2023 - Mar 2024 (Computer Technician)
   ];
 
   return (
@@ -106,9 +106,7 @@ const Experience = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2">
             Experience
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 mt-2">
-            My professional journey
-          </p>
+
         </motion.div>
 
         <div className="relative">
