@@ -5,14 +5,14 @@ const Experience = () => {
   const experiences = [
     {
       id: -1,
-      title: 'Software Engineer (contract)',
+      title: 'Software Engineer Intern',
       company: 'Zoox',
       companyUrl: 'https://zoox.com/',
       location: 'Foster City, CA',
       period: 'Jan 2026 – Present',
       description: 'Working on the System Design and Mission Assurance (SDMA) team for Spring 2026 term',
       topSkills: [],
-      type: 'Part-time',
+      type: 'Internship',
       logoImg: 'https://media.licdn.com/dms/image/v2/C560BAQF2yqp_9BrVew/company-logo_200_200/company-logo_200_200/0/1654722579133/zoox_inc_logo?e=1768435200&v=beta&t=qFrhxJuRvJMhmuLl665nGHFSb2sn4MmoNjYXHdELbzk',
       logo: '🚗'
     },
@@ -25,7 +25,7 @@ const Experience = () => {
       period: 'Aug 2025 – Dec 2025',
       description: 'Worked on real-time drone detection for counter-UAS systems, prototyping and optimizing computer vision models for embedded deployment and performance tradeoffs.',
       topSkills: ['YOLO', 'TensorFlow', 'PyTorch', 'Python', 'Computer Vision'],
-      type: 'Part-time',
+      type: 'Internship',
       logoImg: 'https://media.licdn.com/dms/image/v2/D560BAQFM3HGYEd54Qw/company-logo_200_200/B56ZU3AzYAHsAI-/0/1740384712418?e=1769040000&v=beta&t=ei1Er3sBLC_IuZDivofQXXiruwJ7aLgd9ewZb2-F9fo',
       logo: '🧠'
     },
@@ -51,7 +51,7 @@ const Experience = () => {
       period: 'May 2025 – Aug 2025',
       description: 'Automated RF test configurations in Python, supporting Wi-Fi, Bluetooth, and 5G certification workflows.',
       topSkills: ['Python', 'RF Testing', 'Wi-Fi', 'Bluetooth', '5G'],
-      type: 'Full-time',
+      type: 'Internship',
       logoImg: 'https://media.licdn.com/dms/image/v2/C560BAQF6aPtfKvMrgQ/company-logo_200_200/company-logo_200_200/0/1656335537218/ul__logo?e=1769040000&v=beta&t=WQuFPzz3TBwY3g-ZtaZox0SxhZJMWBcqc9MlBFcLTEE',
       logo: '🔬'
     },
