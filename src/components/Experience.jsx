@@ -5,14 +5,14 @@ const Experience = () => {
   const experiences = [
     {
       id: -1,
-      title: 'Software Engineer Intern',
+      title: 'Software Engineer',
       company: 'Zoox',
       companyUrl: 'https://zoox.com/',
       location: 'Foster City, CA',
       period: 'Jan 2026 – Present',
       description: 'Working on the System Design and Mission Assurance (SDMA) team for Spring 2026 term',
       topSkills: [],
-      type: 'Internship',
+      type: 'Contract',
       logoImg: 'https://media.licdn.com/dms/image/v2/C560BAQF2yqp_9BrVew/company-logo_200_200/company-logo_200_200/0/1654722579133/zoox_inc_logo?e=1768435200&v=beta&t=qFrhxJuRvJMhmuLl665nGHFSb2sn4MmoNjYXHdELbzk',
       logo: '🚗'
     },
