@@ -13,12 +13,12 @@ const Experience = () => {
       description: 'Working on the System Design and Mission Assurance (SDMA) team.',
       topSkills: [],
       type: 'Internship',
-      logoImg: 'https://media.licdn.com/dms/image/v2/C560BAQF2yqp_9BrVew/company-logo_200_200/company-logo_200_200/0/1654722579133/zoox_inc_logo?e=1768435200&v=beta&t=qFrhxJuRvJMhmuLl665nGHFSb2sn4MmoNjYXHdELbzk',
+      logoImg: 'https://media.licdn.com/dms/image/v2/C560BAQF2yqp_9BrVew/company-logo_200_200/company-logo_200_200/0/1654722579133/zoox_inc_logo?e=1770854400&v=beta&t=JQcwNNM_jI5Z7tm-4_-ZKQ-7eSzQz1eqOuMc37a1IeY',
       logo: '🚗'
     },
     {
       id: 0,
-      title: 'Machine Learning Intern',
+      title: 'Machine Learning Engineer',
       company: 'Solakair',
       companyUrl: 'https://www.linkedin.com/company/solakair/',
       location: 'Remote',
@@ -26,7 +26,7 @@ const Experience = () => {
       description: 'Worked on real-time drone detection for counter-UAS systems, prototyping and optimizing computer vision models for embedded deployment and performance tradeoffs.',
       topSkills: ['YOLO', 'TensorFlow', 'PyTorch', 'Python', 'Computer Vision'],
       type: 'Internship',
-      logoImg: 'https://media.licdn.com/dms/image/v2/D560BAQFM3HGYEd54Qw/company-logo_200_200/B56ZU3AzYAHsAI-/0/1740384712418?e=1769040000&v=beta&t=ei1Er3sBLC_IuZDivofQXXiruwJ7aLgd9ewZb2-F9fo',
+      logoImg: 'https://media.licdn.com/dms/image/v2/D560BAQFM3HGYEd54Qw/company-logo_200_200/B56ZU3AzYAHsAI-/0/1740384712418?e=1770854400&v=beta&t=DbfmFhW_fZcD6wYA49YxY682-mxz5yZ5r9BpKTzRqTc',
       logo: '🧠'
     },
     {
@@ -44,7 +44,7 @@ const Experience = () => {
     },
     {
       id: 1,
-      title: 'Wireless Test Engineer Intern',
+      title: 'Wireless Test Engineer',
       company: 'UL Solutions',
       companyUrl: 'https://www.linkedin.com/company/ulsolutions/',
       location: 'Fremont, CA',
@@ -52,7 +52,7 @@ const Experience = () => {
       description: 'Automated RF test configurations in Python, supporting Wi-Fi, Bluetooth, and 5G certification workflows.',
       topSkills: ['Python', 'RF Testing', 'Wi-Fi', 'Bluetooth', '5G'],
       type: 'Internship',
-      logoImg: 'https://media.licdn.com/dms/image/v2/C560BAQF6aPtfKvMrgQ/company-logo_200_200/company-logo_200_200/0/1656335537218/ul__logo?e=1769040000&v=beta&t=WQuFPzz3TBwY3g-ZtaZox0SxhZJMWBcqc9MlBFcLTEE',
+      logoImg: 'https://media.licdn.com/dms/image/v2/C560BAQF6aPtfKvMrgQ/company-logo_200_200/company-logo_200_200/0/1656335537218/ul__logo?e=1770854400&v=beta&t=N31mRiPLutfh2IhMniHv4nvmM4Av3-Sgr5i-Y6G-t0k',
       logo: '🔬'
     },
     {
@@ -65,7 +65,7 @@ const Experience = () => {
       description: 'Supported C++ programming labs by helping students with data structures, algorithms, and debugging through hands-on mentoring.',
       topSkills: ['C++', 'Data Structures', 'Algorithms', 'OOP'],
       type: 'Part-time',
-      logoImg: 'https://media.licdn.com/dms/image/v2/C510BAQFOIoUaCdyM7Q/company-logo_200_200/company-logo_200_200/0/1631379563643?e=1769040000&v=beta&t=ewQQKecBW3nELnxkDAeQMIcBeonn3fryb_dEpS90cm4',
+      logoImg: 'https://media.licdn.com/dms/image/v2/C510BAQFOIoUaCdyM7Q/company-logo_200_200/company-logo_200_200/0/1631379563643?e=1770854400&v=beta&t=13m_pyIV9NJSzUOK5dClo9OGwJty96v6mNT2l7-eIPY',
       logo: '🎓'
     },
     {
@@ -78,7 +78,7 @@ const Experience = () => {
       description: 'Maintained computer lab systems and provided hands-on hardware and software troubleshooting for students and faculty.',
       topSkills: ['Hardware Support', 'System Maintenance', 'Troubleshooting'],
       type: 'Part-time',
-      logoImg: 'https://media.licdn.com/dms/image/v2/C510BAQFOIoUaCdyM7Q/company-logo_200_200/company-logo_200_200/0/1631379563643?e=1769040000&v=beta&t=ewQQKecBW3nELnxkDAeQMIcBeonn3fryb_dEpS90cm4',
+      logoImg: 'https://media.licdn.com/dms/image/v2/C510BAQFOIoUaCdyM7Q/company-logo_200_200/company-logo_200_200/0/1631379563643?e=1770854400&v=beta&t=13m_pyIV9NJSzUOK5dClo9OGwJty96v6mNT2l7-eIPY',
       logo: '💻'
     }
   ]
