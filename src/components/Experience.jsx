@@ -10,9 +10,9 @@ const Experience = () => {
       companyUrl: 'https://zoox.com/',
       location: 'Foster City, CA',
       period: 'Jan 2026 – Present',
-      description: 'Working on the System Design and Mission Assurance (SDMA) team for Spring 2026 term',
+      description: 'Working on the System Design and Mission Assurance (SDMA) team.',
       topSkills: [],
-      type: 'Contract',
+      type: 'Internship',
       logoImg: 'https://media.licdn.com/dms/image/v2/C560BAQF2yqp_9BrVew/company-logo_200_200/company-logo_200_200/0/1654722579133/zoox_inc_logo?e=1768435200&v=beta&t=qFrhxJuRvJMhmuLl665nGHFSb2sn4MmoNjYXHdELbzk',
       logo: '🚗'
     },
@@ -39,7 +39,7 @@ const Experience = () => {
       description: 'Led the rebuild of the club website, collaborating with a cross-functional team to ship new features and improve platform reliability and authentication.',
       topSkills: ['Next.js', 'React', 'TypeScript', 'Jira', 'Git'],
       type: 'Part-time',
-      logoImg: 'https://media.licdn.com/dms/image/v2/D560BAQFvcN3hTfb-Nw/company-logo_200_200/B56Zk0j4fEIAAI-/0/1757523446029/ai_machine_learning_club_sjsu_logo?e=1767830400&v=beta&t=9ePwlJqUENyYsRgNOdia018jY3JlVq2FR6DEGo4cDKs',
+      logoImg: 'https://media.licdn.com/dms/image/v2/D560BAQFvcN3hTfb-Nw/company-logo_200_200/B56Zk0j4fEIAAI-/0/1757523446029/ai_machine_learning_club_sjsu_logo?e=1770249600&v=beta&t=grUCGYKlxv7JAW7FSFBHj6ok6uKj6mfAVnMsiM_upOQ',
       logo: '🌐'
     },
     {
