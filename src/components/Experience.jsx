@@ -10,7 +10,7 @@ const Experience = () => {
       companyUrl: 'https://zoox.com/',
       location: 'Foster City, CA',
       period: 'Jan 2026 – Present',
-      description: 'Working on the System Design and Mission Assurance (SDMA) team.',
+      description: 'System Design and Mission Assurance (SDMA) team.',
       topSkills: [],
       type: 'Internship',
       logoImg: 'https://media.licdn.com/dms/image/v2/C560BAQF2yqp_9BrVew/company-logo_200_200/company-logo_200_200/0/1654722579133/zoox_inc_logo?e=1770854400&v=beta&t=JQcwNNM_jI5Z7tm-4_-ZKQ-7eSzQz1eqOuMc37a1IeY',
@@ -39,7 +39,7 @@ const Experience = () => {
       description: 'Led the rebuild of the club website, collaborating with a cross-functional team to ship new features and improve platform reliability and authentication.',
       topSkills: ['Next.js', 'React', 'TypeScript', 'Jira', 'Git'],
       type: 'Part-time',
-      logoImg: 'https://media.licdn.com/dms/image/v2/D560BAQFvcN3hTfb-Nw/company-logo_200_200/B56Zk0j4fEIAAI-/0/1757523446029/ai_machine_learning_club_sjsu_logo?e=1770249600&v=beta&t=grUCGYKlxv7JAW7FSFBHj6ok6uKj6mfAVnMsiM_upOQ',
+      logoImg: 'https://media.licdn.com/dms/image/v2/D560BAQFvcN3hTfb-Nw/company-logo_200_200/B56Zk0j4fEIAAI-/0/1757523446029/ai_machine_learning_club_sjsu_logo?e=1772064000&v=beta&t=FckJsq-E-RS0_7c4Hiix7zD5Szh2LwUr00AUe35iUDs',
       logo: '🌐'
     },
     {
@@ -94,7 +94,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-16 lg:py-24 bg-gray-100/50 dark:bg-gray-900/30 overflow-hidden">
+    <section id="experience" className="py-16 lg:py-24 bg-gray-100/50 dark:bg-gray-900/30">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -133,7 +133,7 @@ const Experience = () => {
                   initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true, margin: "-50px" }}
+                  viewport={{ once: true, margin: "-10px" }}
                   className={`w-full md:w-1/2 pl-20 md:pl-0 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'
                     }`}
                 >
