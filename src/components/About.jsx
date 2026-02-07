@@ -31,7 +31,7 @@ const About = () => {
                 I am interested in infrastructure and cloud computing, machine learning and computer vision. In the long term, I'm excited about robotics and autonomous vehicles.
               </p>
               <p>
-                Some of my favorite movies that inspired me include Real Steel and The Social Network. Outside of school and work, you'll probably find me playing soccer, lifting at the gym, cooking something new, or hiking. I am a polyglot, fluent in four languages and currently learning Spanish, so feel free to say hola!
+                Some of my favorite movies that inspired me include Real Steel and The Social Network. Outside of school and work, you'll probably find me playing soccer, lifting at the gym, cooking something new, or hiking. Fun fact: I am a polyglot, fluent in four languages and currently learning Spanish, so feel free to say hola!
               </p>
             </div>
           </div>
@@ -43,7 +43,7 @@ const About = () => {
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Interests</h3>
             </div>
             <div className="flex flex-wrap gap-3">
-              {['Infrastructure', 'Cloud', 'Machine Learning', 'Computer Vision', 'Autonomous Vehicle', 'Embedded System', 'IoT', 'Robotics', 'Soccer'].map((interest, index) => (
+              {['Infrastructure', 'Cloud', 'Machine Learning', 'Computer Vision', 'Autonomous Vehicle', 'Embedded System', 'IoT'].map((interest, index) => (
                 <span
                   key={index}
                   className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium"
