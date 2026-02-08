@@ -46,9 +46,7 @@ const Hero = () => {
             <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 font-light">
               Computer Software Engineering @ San Jose State University
             </p>
-            <p className="text-base text-gray-500 dark:text-gray-400 max-w-xl mx-auto leading-relaxed">
-              Building impactful solutions and exploring the intersection of AI, ML, and modern software development.
-            </p>
+
           </motion.div>
 
           {/* Quick Links */}
