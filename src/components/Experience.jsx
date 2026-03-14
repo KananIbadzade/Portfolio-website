@@ -39,7 +39,7 @@ const Experience = () => {
       description: 'Led the rebuild of the club website, collaborating with a cross-functional team to ship new features and improve platform reliability and authentication.',
       topSkills: ['Next.js', 'React', 'TypeScript', 'Jira', 'Git'],
       type: 'Part-time',
-      logoImg: 'https://media.licdn.com/dms/image/v2/D560BAQFvcN3hTfb-Nw/company-logo_200_200/B56Zk0j4fEIAAI-/0/1757523446029/ai_machine_learning_club_sjsu_logo?e=1772064000&v=beta&t=FckJsq-E-RS0_7c4Hiix7zD5Szh2LwUr00AUe35iUDs',
+      logoImg: '/images/ai-ml-club.jpg',
       logo: '🌐'
     },
     {
