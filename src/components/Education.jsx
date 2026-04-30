@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { GraduationCap, Calendar, MapPin, BookOpen } from 'lucide-react'
+import { Calendar, MapPin, BookOpen } from 'lucide-react'
 
 const Education = () => {
   const courses = [

@@ -1,7 +1,7 @@
 import { useTheme } from '../context/ThemeContext'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Github, Linkedin, Mail, Menu, X, Sun, Moon } from 'lucide-react'
+import { Github, Linkedin, Menu, X, Sun, Moon } from 'lucide-react'
 
 const Navbar = () => {
   const { isDark, toggleTheme } = useTheme()

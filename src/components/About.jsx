@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { MapPin, Code, Lightbulb } from 'lucide-react'
+import { Lightbulb } from 'lucide-react'
 
 const About = () => {
   const scrollToSection = (sectionId) => {
