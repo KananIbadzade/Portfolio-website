@@ -7,7 +7,6 @@ import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import Stars from './components/Stars'
-import Snow from './components/Snow'
 import DayParticles from './components/DayParticles'
 
 function AppContent() {
