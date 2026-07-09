@@ -23,7 +23,7 @@ const About = () => {
               About
             </h2>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Computer software engineering student at San Jose State University, originally from Azerbaijan. Graduating May 2027.
+              Computer software engineering student at San Jose State University, from Azerbaijan 🇦🇿. Graduating May 2027.
             </p>
           </div>
 
