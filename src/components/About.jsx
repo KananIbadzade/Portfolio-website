@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Lightbulb } from 'lucide-react'
 
 const About = () => {
   const scrollToSection = (sectionId) => {
@@ -22,11 +23,38 @@ const About = () => {
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-6">
               About
             </h2>
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Computer software engineering student at San Jose State University, from Azerbaijan 🇦🇿. Graduating May 2027.
-            </p>
+            <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p>
+                Originally from 🇦🇿, I moved to the Bay Area at 17 and discovered my passion for software engineering. I am currently studying at San José State University, focusing on building practical solutions that make a difference.
+              </p>
+              <p>
+                I am interested in infrastructure and cloud computing, machine learning and computer vision. In the long term, I'm excited about robotics and autonomous vehicles.
+              </p>
+              <p>
+                Some of my favorite movies that inspired me include Real Steel and The Social Network. Outside of school and work, you'll probably find me playing soccer, lifting at the gym, cooking something new, or hiking. Fun fact: I am a polyglot, fluent in four languages and currently learning Spanish, so feel free to say hola!
+              </p>
+            </div>
           </div>
 
+          {/* Interests */}
+          <div className="pt-6 border-t border-gray-200 dark:border-gray-700">
+            <div className="flex items-center gap-2 mb-4">
+              <Lightbulb className="w-5 h-5 text-primary-600" />
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Interests</h3>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {['Infrastructure', 'Cloud', 'Machine Learning', 'Computer Vision', 'Autonomous Vehicle', 'Embedded System', 'IoT'].map((interest, index) => (
+                <span
+                  key={index}
+                  className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium"
+                >
+                  {interest}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Quick Navigation */}
           <div className="pt-6 flex flex-wrap gap-4">
             <motion.button
               onClick={() => scrollToSection('experience')}

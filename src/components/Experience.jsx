@@ -17,6 +17,19 @@ const Experience = () => {
       logo: '🚗'
     },
     {
+      id: 0,
+      title: 'Machine Learning Engineer',
+      company: 'Solakair',
+      companyUrl: 'https://www.linkedin.com/company/solakair/',
+      location: 'Remote',
+      period: 'Aug 2025 – Dec 2025',
+      description: 'Worked on real-time drone detection for counter-UAS systems, prototyping and optimizing computer vision models for embedded deployment and performance tradeoffs.',
+      topSkills: ['YOLO', 'TensorFlow', 'PyTorch', 'Python', 'Computer Vision'],
+      type: 'Internship',
+      logoImg: '/images/solakair.jpg',
+      logo: '🧠'
+    },
+    {
       id: 0.5,
       title: 'Officer',
       company: 'AI and Machine Learning at SJSU',
@@ -51,7 +64,7 @@ const Experience = () => {
       period: 'Mar 2024 – Jul 2024',
       description: 'Supported C++ programming labs by helping students with data structures, algorithms, and debugging through hands-on mentoring.',
       topSkills: ['C++', 'Data Structures', 'Algorithms', 'OOP'],
-      type: 'Volunteer',
+      type: 'Part-time',
       logoImg: '/images/deanza.jpg',
       logo: '🎓'
     },
@@ -64,7 +77,7 @@ const Experience = () => {
       period: 'Oct 2023 – Mar 2024',
       description: 'Maintained computer lab systems and provided hands-on hardware and software troubleshooting for students and faculty.',
       topSkills: ['Hardware Support', 'System Maintenance', 'Troubleshooting'],
-      type: 'Volunteer',
+      type: 'Part-time',
       logoImg: '/images/deanza.jpg',
       logo: '💻'
     }
@@ -73,10 +86,11 @@ const Experience = () => {
   // Sort experiences by date (latest first) to ensure correct order
   const sortedExperiences = [
     experiences[0], // Jan 2026 - Present (Zoox)
-    experiences[1], // Aug 2025 - Present (AI/ML Club)
-    experiences[2], // May 2025 - Aug 2025 (UL Solutions)
-    experiences[3], // Mar 2024 - Jul 2024 (Teaching Assistant)
-    experiences[4]  // Oct 2023 - Mar 2024 (Computer Technician)
+    experiences[2], // Aug 2025 - Present (AI/ML Club)
+    experiences[1], // Aug 2025 - Dec 2025 (Solakair)
+    experiences[3], // May 2025 - Aug 2025 (UL Solutions)
+    experiences[4], // Mar 2024 - Jul 2024 (Teaching Assistant)
+    experiences[5]  // Oct 2023 - Mar 2024 (Computer Technician)
   ];
 
   return (
